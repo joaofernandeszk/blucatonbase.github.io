@@ -1,0 +1,218 @@
+/* General Reset */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #0052FF; /* Full blue background */
+  color: white;
+  text-align: center;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #0052FF;
+  padding: 15px 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  display: inline;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2em;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #ffcccb;
+}
+
+/* Section Styling */
+.section {
+  padding: 100px 20px;
+  margin-top: 60px; /* To prevent overlap with navbar */
+}
+
+/* Alternate Backgrounds */
+.section:nth-child(even) {
+  background-color: #ffffff; /* White background for alternate sections */
+  color: #0052FF; /* Blue text for white background */
+}
+
+.section:nth-child(odd) {
+  background-color: #0052FF; /* Blue background */
+  color: white; /* White text */
+}
+
+/* General Content Styling */
+.section .content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1.2em;
+  line-height: 1.5;
+}
+
+/* Tokenomics List */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  font-size: 1.2em;
+  margin: 10px 0;
+  text-align: left;
+}
+
+/* Social Links */
+.social-links {
+  list-style: none;
+  padding: 0;
+}
+
+.social-links li {
+  margin: 10px 0;
+}
+
+.social-links a {
+  text-decoration: none;
+  color: #0052FF; /* Blue text for links on white background */
+  font-size: 1.2em;
+}
+
+.social-links a:hover {
+  color: #003d80;
+}
+
+/* Footer */
+footer {
+  background-color: #003d80;
+  padding: 20px 0;
+  font-size: 0.9em;
+  color: #cce4ff;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Home Section */
+#home {
+  height: 100vh; /* Full screen height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+#home h1 {
+  font-size: 4em; /* Larger font size for the title */
+  margin-bottom: 20px;
+}
+
+#home p {
+  font-size: 1.5em; /* Larger font size for the subtitle */
+  margin-bottom: 30px;
+}
+
+#home .cat-image {
+  width: 800px; /* Slightly larger cat image */
+  height: auto;
+  border-radius: 10px;
+}
+
+/* General Cat Image Styling */
+.cat-image {
+  max-width: 100%; /* Ensure it fits within the container */
+  height: auto; /* Maintain aspect ratio */
+  max-height: 400px; /* Restrict maximum height */
+  margin: 20px auto; /* Center with spacing */
+  display: block;
+  border-radius: 10px; /* Optional: Adds rounded corners */
+}
+
+/* Home Section Cat Image (Optional for larger styling in Home) */
+#home .cat-image {
+  max-height: 600px; /* Larger height for Home section */
+}
+
+/* Lore Section Cat Image */
+#lore .cat-image {
+  max-width: 100%;
+  height: auto;
+  max-height: 400px; /* Smaller image for Lore */
+  margin-bottom: 20px;
+  display: block;
+}
+
+/* Buy Section */
+#buy {
+  background-color: #0052FF; /* Blue background */
+  color: white; /* White text */
+  text-align: center;
+}
+
+#buy p {
+  font-size: 1.2em;
+  margin-bottom: 15px;
+}
+
+#buy #contract-address {
+  font-family: 'Courier New', monospace; /* Monospace for CA */
+  font-size: 1.4em;
+  margin: 10px 0;
+  background: #ffffff;
+  color: #0052FF;
+  padding: 10px;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+#buy #copy-btn {
+  background-color: #ffffff;
+  color: #0052FF;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1em;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+#buy #copy-btn:hover {
+  background-color: #003d80;
+  color: white;
+}
